@@ -1,6 +1,6 @@
 # Custom stdlib (in lack of a better name) (Recent Windows only)
 
-The goal is to re-implement the FFI part of stdlib (e.g. the `std::{fs,net,thread}` modules), directly in Windows API calls.
+The goal is to re-implement the FFI part of stdlib (e.g. part or whole `std::{fs,net,thread,sync}` modules), directly in Windows API calls.
 
 I will try to keep the same-ish API, but I will not promise anything.
 

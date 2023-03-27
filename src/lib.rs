@@ -1,14 +1,13 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+#![warn(
+    clippy::undocumented_unsafe_blocks,
+    missing_debug_implementations,
+    missing_docs,
+    clippy::missing_safety_doc,
+    clippy::missing_errors_doc,
+    clippy::missing_panics_doc,
+    clippy::serde_api_misuse
+)]
+#![doc = include_str!("../README.md")]
+#![deny(unsafe_op_in_unsafe_fn)]
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod sync;
