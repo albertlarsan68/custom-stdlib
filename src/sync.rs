@@ -151,6 +151,6 @@
 
 pub use std::sync::{atomic, mpsc, Arc};
 
-pub use rwlock::RwLock;
+pub use rwlock::*;
 
 mod rwlock;
